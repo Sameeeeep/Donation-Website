@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding: 60px 200px 0px 200px;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./images/full-img-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.donation h3 {
+    padding: 20px;
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: rgba(252, 162, 17, 0.8);
+}
+
+.quote {
+    padding: 20px;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.quote span {
+    color: rgba(252, 162, 17, 0.8);
+}
+
+.action {
+    padding: 10px;
+    font-size: larger;
+    text-transform: capitalize;
+}
+
+.hero {
+    padding: 0px 100px 100px 0px;
+    border: 2px solid transparent;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.donate-btn {
+    margin-top: 9px;
+    padding: 40px 0 0 0;
+}
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+
+.hero {
+    filter: drop-shadow(0px 5px 3px black);
+    animation: drop 1.5s ease;
+}
+
+@media screen and (max-width:969px) {
+    .container {
+        padding: 100px 50px 50px 50px;
+        flex-direction: column;
+    }
+
+    .hero {
+        padding: 0px 30px 20px 30px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .container {
+        padding: 100px 50px 50px 50px;
+        flex-direction: column;
+    }
+
+    .hero {
+        padding: 0px 30px 20px 3px;
+    }
+
+    .quote {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    .action {
+        font-size: 1rem;
+    }
+
+    .hero h3 {
+        font-size: 2rem;
+        padding: 10px;
+    }
+}

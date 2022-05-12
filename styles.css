@@ -1,0 +1,162 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(./images/Poverty-Affects-Different-Age-Groups-1500x1000.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero,
+.banner {
+    filter: drop-shadow(0px 5px 3px black);
+    animation: drop 1.5s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 80px;
+    padding-right: 20px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+}
+
+nav ul li a:hover {
+    color: rgba(252, 162, 17, 0.8);
+
+}
+
+.container {
+    text-align: center;
+    justify-content: center;
+    padding: 70px;
+}
+
+.banner {
+    padding: 100px;
+}
+
+.text {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    color: white;
+    font-size: 3rem;
+    padding: 0px 20px 0px 20px;
+    text-transform: uppercase;
+    color: ivory;
+    font-weight: 800;
+}
+
+.text span {
+    color: rgba(252, 162, 17);
+}
+
+.btn {
+    margin-bottom: 0;
+    background: transparent;
+    padding: 1.5rem 3rem;
+    font-size: 2rem;
+    font-weight: 400;
+    display: inline-block;
+    letter-spacing: 10px;
+    border: 2px solid #222;
+    color: #222;
+    border-color: white;
+    transition: ease 500ms;
+}
+
+.donate {
+    color: white;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: rgba(252, 162, 17, 0.8);
+}
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+
+@media screen and (max-width:969px) {
+
+    .banner {
+        flex-direction: column;
+        padding: 0px 10px 80px 10px;
+        margin: 0;
+    }
+
+    .text {
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        color: white;
+        font-size: 3rem;
+        padding: 0px 20px 0px 20px;
+        text-transform: uppercase;
+        color: ivory;
+        font-weight: 800;
+    }
+
+    .container {
+        margin: 0;
+        text-align: center;
+
+    }
+
+    .btn {
+        padding: 1.2rem 2.5rem;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    nav ul li {
+        list-style: none;
+        display: block;
+        padding: 10px 0 10px 0;
+    }
+}

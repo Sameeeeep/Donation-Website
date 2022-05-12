@@ -1,0 +1,66 @@
+main {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./images/Poverty-what-is-poverty-1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.image {
+    background: url("./images/success.gif");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 40vh;
+    padding: 1rem;
+    margin: 0;
+}
+
+.payment-success {
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: #fff;
+    padding: 5rem;
+    text-align: center;
+}
+
+.redirecting {
+    color: rgba(252, 162, 17, 0.85);
+    text-align: center;
+}
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+
+.form {
+    filter: drop-shadow(0px 5px 3px black);
+    animation: drop 1.5s ease;
+}
+
+@media screen and (max-width:969px) {
+    .form {
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    .payment-success {
+        padding: 2rem;
+        margin-top: 20%;
+    }
+
+    .image {
+        height: 30vh;
+        padding: 2rem;
+    }
+}
