@@ -7,7 +7,8 @@
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
 }
-.menu{
+
+.menu {
     cursor: pointer;
     color: white;
     height: 33px;
@@ -15,8 +16,9 @@
     width: 42px;
     top: 9px;
 }
-@media screen and (min-width:969px){
-    .menu{
+
+@media screen and (min-width:969px) {
+    .menu {
         display: none;
     }
 }
@@ -134,7 +136,8 @@ nav ul li a:hover {
     nav ul li:not(.name) {
         visibility: hidden;
     }
-    .menu{
+
+    .menu {
         top: -90px;
     }
 
@@ -196,9 +199,11 @@ nav ul li a:hover {
         padding: 0px 10px 70px 10px;
         margin: 0;
     }
-    .menu{
+
+    .menu {
         top: -50px;
     }
+
     .text {
         margin-top: 1rem;
         margin-bottom: 3rem;
